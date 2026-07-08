@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Network Dive</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 로더 -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-brand">NETWORK&nbsp;DIVE</div>
+      <div id="loader-bar"><div id="loader-fill"></div></div>
+      <div id="loader-pct">0%</div>
+    </div>
+  </div>
+
+  <!-- 배경 레이어 (전부 fixed 풀뷰포트) -->
+  <canvas id="scrub-canvas"></canvas>
+
+  <div id="video-stage">
+    <video id="v1" muted playsinline preload="auto" src="../videos/network-dive/clips/KF0.3-K0.5.mp4"></video>
+    <video id="v2" muted playsinline preload="auto" src="../videos/network-dive/clips/KF0.5-1.mp4"></video>
+    <video id="v3" muted playsinline preload="auto" src="../videos/network-dive/clips/KF1-2-1.mp4"></video>
+  </div>
+
+  <div class="vignette"></div>
+
+  <!-- 헤드라인 오버레이 -->
+  <div id="headlines">
+    <h1 class="hl" data-hl="hero">What happens when a file<br />leaves your company?</h1>
+    <h2 class="hl" data-hl="bytes">Every upload becomes bytes.</h2>
+    <h2 class="hl" data-hl="osi">7 layers.<br />One byte stream.</h2>
+  </div>
+
+  <!-- 클릭 게이트 -->
+  <div id="gate">
+    <button id="upload-btn" type="button" aria-label="Upload file">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="gate-hint">click to upload</div>
+  </div>
+
+  <!-- 스크롤 유도 힌트 (히어로) -->
+  <div id="scroll-cue"><span></span></div>
+
+  <!-- 끝 스텁 -->
+  <div id="end-stub"><div class="end-inner"><span class="end-tag">HERO · WIP</span><p>to be continued —<br />proxy inspection &amp; alert</p></div></div>
+
+  <!-- 스크롤 거리를 만드는 스페이서 (JS가 높이 설정) -->
+  <div id="spacer"></div>
+
+  <!-- 라이브러리 -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

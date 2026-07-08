@@ -9,3 +9,4 @@
 # Scratch / temp
 scratchpad/
 *.tmp
+.gstack/
