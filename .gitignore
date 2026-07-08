@@ -1,0 +1,11 @@
+# Secrets — never commit
+.env
+.env.*
+*.key
+
+# OS
+.DS_Store
+
+# Scratch / temp
+scratchpad/
+*.tmp
