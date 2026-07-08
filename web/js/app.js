@@ -29,6 +29,7 @@ const vids = [document.getElementById('v1'), document.getElementById('v2'), docu
 const gate = document.getElementById('gate');
 const uploadBtn = document.getElementById('upload-btn');
 const scrollCue = document.getElementById('scroll-cue');
+const skipBtn = document.getElementById('skip');
 const endStub = document.getElementById('end-stub');
 const spacer = document.getElementById('spacer');
 const loader = document.getElementById('loader');
@@ -109,6 +110,7 @@ function startAutoAnim() {
   state = 'AUTOANIM';
   showGate(false);
   scrollCue.style.opacity = 0;
+  skipBtn.classList.add('show'); // 스킵 버튼 노출
   lenis.stop();                 // 스크롤 잠금 (핀)
   let i = 0;
   const playNext = () => {
@@ -125,11 +127,17 @@ function startAutoAnim() {
 }
 function finishAutoAnim() {
   state = 'SCRUB2';
+  skipBtn.classList.remove('show');
   setSpacer();                  // 스페이서 확장 (scrub2 스크롤 거리 열림)
   drawScrubFrame(scrub2Imgs, 0);// KF2-1 프레임
   hideAllVideos();              // canvas 다시 노출 (video 위에서 사라짐)
   lenis.scrollTo(gateY, { immediate: true });
   lenis.start();
+}
+function skipAutoAnim() {
+  if (state !== 'AUTOANIM') return;
+  vids.forEach(v => { v.onended = null; try { v.pause(); } catch (e) {} }); // 재생 체인 중단
+  finishAutoAnim();
 }
 
 /* ---- 메인 프레임 루프 ---- */
@@ -206,6 +214,12 @@ async function boot() {
 
   // 이벤트
   uploadBtn.addEventListener('click', startAutoAnim);
+  skipBtn.addEventListener('click', skipAutoAnim);
+  window.addEventListener('keydown', e => {
+    if (state === 'AUTOANIM' && (e.code === 'Space' || e.code === 'Enter' || e.code === 'ArrowDown')) {
+      e.preventDefault(); skipAutoAnim();
+    }
+  });
   window.addEventListener('resize', () => {
     computeRanges(); resizeCanvas();
     // 현재 프레임 재렌더

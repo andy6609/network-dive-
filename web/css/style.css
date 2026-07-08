@@ -37,7 +37,13 @@ img,video,canvas{ display:block; }
 .hl{
   position:absolute; opacity:0; will-change:opacity, transform;
   font-weight:650; letter-spacing:-0.02em; line-height:1.05;
-  text-shadow:0 2px 40px rgba(0,0,0,.6);
+  text-shadow:0 2px 26px rgba(0,0,0,.8), 0 1px 3px rgba(0,0,0,.9);
+}
+/* 헤드라인 뒤 어두운 스크림 (밝은 프레임 위 가독성) — 부모 opacity 따라 같이 페이드 */
+.hl::before{
+  content:""; position:absolute; inset:-0.55em -0.9em -0.45em -0.9em; z-index:-1;
+  background:radial-gradient(ellipse at center, rgba(3,5,8,.78) 0%, rgba(3,5,8,.5) 48%, rgba(3,5,8,0) 80%);
+  filter:blur(7px);
 }
 .hl[data-hl="hero"]{
   left:7vw; top:24vh; max-width:16ch;
@@ -54,7 +60,7 @@ img,video,canvas{ display:block; }
 /* ---------- 클릭 게이트 ---------- */
 #gate{
   position:fixed; inset:0; z-index:6; display:flex; flex-direction:column;
-  align-items:center; justify-content:center; gap:22px;
+  align-items:center; justify-content:flex-end; gap:18px; padding-bottom:9vh;
   opacity:0; pointer-events:none; transition:opacity .45s ease;
 }
 #gate.show{ opacity:1; pointer-events:auto; }
@@ -94,14 +100,27 @@ img,video,canvas{ display:block; }
 
 /* ---------- 끝 스텁 ---------- */
 #end-stub{
-  position:fixed; inset:0; z-index:5; display:flex; align-items:center; justify-content:center;
-  opacity:0; pointer-events:none; transition:opacity .5s ease; text-align:center;
+  position:fixed; inset:0; z-index:5; display:flex; align-items:flex-end; justify-content:center;
+  padding-bottom:7vh; opacity:0; pointer-events:none; transition:opacity .5s ease; text-align:center;
 }
+.end-inner{ background:radial-gradient(ellipse at center, rgba(3,5,8,.72) 0%, rgba(3,5,8,0) 75%); padding:18px 40px; }
 .end-inner .end-tag{
   display:inline-block; font-size:.72rem; letter-spacing:.3em; color:var(--coral);
   border:1px solid rgba(255,106,61,.4); border-radius:999px; padding:6px 14px; margin-bottom:18px;
 }
 .end-inner p{ font-size:clamp(1.2rem,3vw,2rem); color:rgba(238,242,246,.85); line-height:1.3; }
+
+/* ---------- 자동애니 스킵 버튼 ---------- */
+#skip{
+  position:fixed; right:26px; bottom:26px; z-index:7;
+  padding:9px 16px; border-radius:999px; cursor:pointer;
+  font-size:.78rem; letter-spacing:.18em; text-transform:uppercase;
+  color:rgba(238,242,246,.82); background:rgba(10,14,20,.55);
+  border:1px solid rgba(238,242,246,.22); backdrop-filter:blur(6px);
+  opacity:0; pointer-events:none; transition:opacity .35s ease, background .15s ease;
+}
+#skip.show{ opacity:1; pointer-events:auto; }
+#skip:hover{ background:rgba(20,26,34,.8); color:#fff; }
 
 /* ---------- 스페이서 & 로더 ---------- */
 #spacer{ width:1px; pointer-events:none; visibility:hidden; }
