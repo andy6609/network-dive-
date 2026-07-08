@@ -1,0 +1,19 @@
+{
+  "prompt": "Ultra-realistic cinematic extreme close-up of a computer monitor screen filling the entire frame, captured mid-push as a camera dives toward the glass. The screen shows the same Claude-style AI chat interface from before — warm cream / off-white paper-toned background with a soft coral-orange accent — but now so close that only the central file-attachment upload card dominates the frame: a document icon, a filename, and a thin coral progress bar mid-upload, all enlarged and slightly softened by proximity. At the closest areas of the frame, the smooth UI is beginning to reveal its physical structure: the faint repeating lattice of RGB subpixels emerging through the cream-colored interface, a subtle moiré shimmer, fine anti-glare texture and micro-dust on the glass surface. At the very edge of the upload card, the first few pixels are starting to detach and lift off the surface as tiny luminous cyan particles — the earliest hint of the document dissolving into data. The transition reads as the exact moment the physical screen begins turning into the digital world: still mostly a warm, readable interface, but breaking into cool cyan light at the closest edges. Warm off-white UI glow dominant, with the first traces of electric cyan appearing where the pixels lift. Slight barrel curvature and glare of the glass at the frame edges. Shallow depth of field, the upload card sharp at center, edges softly defocused. Subtle chromatic aberration, fine sensor grain, real optical bokeh. 60mm macro lens, f/2.2, ISO 320. Documentary realism, dark-tech cinematic product-film aesthetic in the style of an Apple or Nvidia launch film. Keep any UI text short, crisp and legible; do not garble it. Balanced, legible exposure — bright, clearly exposed elements against controlled shadows with retained detail. No muddy, murky, or underexposed haze; no crushed midtones.",
+  "negative_prompt": "full room visible, person visible, desk visible, monitor bezel dominating, distorted text, garbled letters, gibberish UI, warped interface, cartoon, illustration, flat vector art, oversaturated colors, neon overload, watermark, logo watermark, low resolution, plastic look, cheesy sci-fi, lens flare spam, HDR halos, underexposed, muddy, murky, crushed midtones, invisible details, washed out",
+  "api_parameters": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "jpg",
+    "google_search": false
+  },
+  "settings": {
+    "resolution": "2K",
+    "style": "documentary realism, dark-tech cinematic, screen-approach transition",
+    "lighting": "warm UI glow dominant, first cyan traces at dissolving edges",
+    "camera_angle": "extreme close-up mid-push into screen, upload card centered",
+    "depth_of_field": "shallow, upload card sharp, edges soft",
+    "quality": "high detail, legible UI text, subpixel lattice, subtle grain"
+  },
+  "_note": "KF0.5 — bridge between KF0 (office) and KF1 (subpixel macro). Adopted render: Q3_performance_report_2024.xlsx uploading 75%, corner dissolving into cyan pixels."
+}

@@ -1,0 +1,18 @@
+{
+  "prompt": "Ultra-realistic cinematic close-up inside the proxy inspection chamber at the moment a file is identified. A single luminous packet-block, extracted from the data stream, floats at the center held inside a glowing cyan wireframe bracket. Its surface unfolds to reveal layered content: rows of raw hexadecimal bytes and binary digits, and at the leading edge a small highlighted cluster of bytes glowing warm amber, representing the file's magic-number signature being matched. A thin clean scan line reads across the byte rows. To the side, a minimal holographic readout panel displays short crisp monospaced status text that is fully legible and undistorted, reading exactly 'FILE DETECTED' with a small file-type tag beneath it. Everything else falls into deep near-black shadow. Electric cyan is the dominant color for the wireframe and scan, warm amber is the alert accent on the matched signature, controlled contrast. Volumetric glow, faint particles, real depth. Shallow depth of field, the packet-block and readout sharp, background streams softly blurred. Subtle chromatic aberration, fine sensor grain, real optical bokeh. 50mm lens, f/2.0, ISO 200. Dark-tech documentary-realism aesthetic in the style of an Apple or Nvidia product film. Keep any text short, crisp and perfectly legible; do not render warped or garbled characters. Do not make it cartoonish; keep photoreal material and disciplined color. Balanced, legible exposure — the luminous elements read bright, clearly exposed and detailed against deep but controlled blacks that retain detail, cohesive with the series' dark-tech grade. No muddy, murky, or underexposed haze; no crushed midtones.",
+  "negative_prompt": "distorted text, garbled letters, misspelled words, warped characters, gibberish, cartoon, illustration, video game render, oversaturated neon, rainbow, cluttered chaos, watermark, logo, low resolution, plastic look, cheesy sci-fi, lens flare spam, HDR halos, underexposed, muddy, murky, crushed midtones, dim underexposed glow, low-contrast haze, invisible details, washed out",
+  "api_parameters": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "jpg",
+    "google_search": false
+  },
+  "settings": {
+    "resolution": "2K",
+    "style": "documentary realism, dark-tech cinematic, file-signature detection close-up",
+    "lighting": "cyan wireframe glow, amber signature-match accent, deep shadow surround",
+    "camera_angle": "centered close-up on floating packet-block and readout",
+    "depth_of_field": "shallow, packet and readout sharp, background soft",
+    "quality": "high detail, legible crisp text, subtle grain"
+  }
+}

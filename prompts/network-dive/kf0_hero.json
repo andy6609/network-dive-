@@ -1,0 +1,18 @@
+{
+  "prompt": "Ultra-realistic cinematic over-the-shoulder shot inside a modern corporate office in the evening, with balanced, moody-but-clearly-legible exposure. In the immediate foreground, the back of a seated office employee: the head, neck, and one shoulder seen from behind, softly lit and slightly out of focus, anonymous and unidentifiable but with visible detail and natural fabric texture on a plain dark-grey sweater, a few stray hairs catching light. The employee faces away from the camera toward a large widescreen monitor that dominates the center of the frame and is the sharp focal point. The monitor clearly and unmistakably displays an AI chat assistant website in active use, instantly recognizable as a Claude-style AI chat product: a warm cream / off-white paper-toned background with a soft coral-orange accent color, a small coral asterisk-like brand mark in the top-left header, a visible conversation of rounded chat message bubbles (a user's question and the assistant's reply text), a clean text input bar at the bottom, and a prominent file-attachment card that is mid-upload — showing a document icon, a filename, and a thin coral progress bar partially filled. It reads immediately as someone chatting with an AI assistant and uploading a company file to it. The bright monitor is the key light, casting a soft glow across the desk and wrapping the employee's silhouette with a gentle cool rim light. The office is dim but readable, not black: a soft warm ambient fill reveals the desk surface with a keyboard, a coffee mug with a subtle highlight, and a tidy background of blurred desks, distant glowing monitors, and warm ceiling downlights giving depth. Cohesive dark-tech color grade — deep controlled shadows with retained detail, cool cyan-blue screen light against warm practical accents, gentle contrast, no crushed blacks. Composition leaves the monitor centered and unobstructed so the camera can later push straight into the screen. Real fine interior grain, subtle screen reflection on the glossy monitor, faint dust motes in the glow. 35mm lens, f/2.0, ISO 640, shallow depth of field with the silhouette softly defocused and the screen tack sharp. Documentary realism, premium moody product-film aesthetic in the style of an Apple or Nvidia evening launch film. Do not beautify, do not add a visible face; keep it cinematic, atmospheric, and clearly readable.",
+  "negative_prompt": "underexposed, pitch black, too dark, crushed blacks, murky, invisible details, no detail in shadows, visible face, front-facing person, facing camera, flat evenly-lit fluorescent office, cartoon, CGI, illustration, 3d render look, plastic skin, oversaturated colors, neon overload, cluttered desk, floating UI elements, distorted screen text, warped monitor, extra fingers, extra limbs, watermark, logo watermark, text watermark, low resolution, blurry focal subject, HDR halos, lens flare spam, stock-photo cheesiness, motion blur",
+  "api_parameters": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "jpg",
+    "google_search": false
+  },
+  "settings": {
+    "resolution": "2K",
+    "style": "documentary realism, dark-tech cinematic product film",
+    "lighting": "single-source monitor glow, cool screen rim light on silhouette, deep shadow environment, no fill",
+    "camera_angle": "over-the-shoulder, monitor centered as focal point",
+    "depth_of_field": "shallow, silhouette defocused, screen tack sharp",
+    "quality": "high detail, real interior grain, unretouched"
+  }
+}

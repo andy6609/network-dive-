@@ -1,0 +1,18 @@
+{
+  "prompt": "Ultra-realistic extreme macro shot passing through the glass surface of a computer monitor at the moment of transition. The foreground is the microscopic surface of an LCD screen: a dense grid of red, green and blue subpixels glowing, slightly uneven, with faint dust specks and a thin film of screen glare. As the camera pushes forward, the orderly pixel grid begins to break apart: the uploaded document's image dissolves into thousands of tiny luminous particles and streams of glowing binary digits, ones and zeros, drifting and lifting off the surface toward the viewer like embers of light. The transition reads as physical matter turning into pure data. Deep near-black background behind the pixel plane, electric cyan and cool blue glow as the dominant accent color, with a few warm specular sparkles. Volumetric light, shallow depth of field with particles blurring in the foreground and the pixel grid sharp at mid-plane, real optical bokeh. Faint chromatic aberration at the frame edges, subtle sensor grain. 100mm macro lens, f/2.8, ISO 200. Documentary-realism dark-tech aesthetic in the style of an Apple or Nvidia product film, cinematic and restrained. Do not make it look like a cartoon or illustration; keep photoreal material physics and controlled contrast. Balanced, legible exposure — the luminous elements read bright, clearly exposed and detailed against deep but controlled blacks that retain detail, cohesive with the series' dark-tech grade. No muddy, murky, or underexposed haze; no crushed midtones.",
+  "negative_prompt": "cartoon, CGI game render, illustration, flat vector art, oversaturated rainbow, neon overload, cluttered, distorted text, warped digits, watermark, logo, low resolution, plastic look, cheesy sci-fi, lens flare spam, HDR halos, muddy colors, oversharpened, underexposed, murky, crushed midtones, dim underexposed glow, low-contrast haze, invisible details, washed out",
+  "api_parameters": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "jpg",
+    "google_search": false
+  },
+  "settings": {
+    "resolution": "2K",
+    "style": "documentary realism, dark-tech cinematic, macro data-dissolve",
+    "lighting": "self-emissive subpixel glow, cyan volumetric accent, deep black surround",
+    "camera_angle": "straight push-in through screen surface, centered",
+    "depth_of_field": "shallow, foreground particles defocused, pixel grid sharp",
+    "quality": "high detail, real macro optics, subtle grain"
+  }
+}
